@@ -1,0 +1,347 @@
+index.html
+<!DOCTYPE html>
+<html>
+<head>
+<title>DANM</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+scroll-behavior:smooth;
+}
+
+body{
+background:#050505;
+color:white;
+overflow-x:hidden;
+}
+
+.hero{
+height:100vh;
+background:url('https://images.unsplash.com/photo-1494526585095-c41746248156') center/cover;
+position:relative;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.overlay{
+position:absolute;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.65);
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:rgba(0,0,0,0.3);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+nav h1{
+font-size:38px;
+letter-spacing:3px;
+color:gold;
+}
+
+.links{
+display:flex;
+gap:30px;
+}
+
+.links a{
+color:white;
+text-decoration:none;
+transition:0.3s;
+font-size:18px;
+}
+
+.links a:hover{
+color:gold;
+}
+
+.content{
+position:relative;
+z-index:2;
+text-align:center;
+padding:20px;
+}
+
+.content h2{
+font-size:75px;
+margin-bottom:20px;
+}
+
+.content p{
+font-size:24px;
+margin-bottom:30px;
+}
+
+.buttons{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+button{
+padding:15px 40px;
+border:none;
+border-radius:50px;
+font-size:18px;
+cursor:pointer;
+font-weight:bold;
+transition:0.4s;
+}
+
+button:hover{
+transform:scale(1.08);
+}
+
+.insta{
+background:gold;
+}
+
+.about{
+padding:120px 10%;
+text-align:center;
+}
+
+.about h2{
+font-size:50px;
+margin-bottom:30px;
+color:gold;
+}
+
+.about p{
+font-size:22px;
+line-height:1.8;
+max-width:900px;
+margin:auto;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+padding:80px 10%;
+}
+
+.card{
+background:#111;
+padding:40px;
+border-radius:25px;
+text-align:center;
+transition:0.4s;
+border:1px solid #222;
+}
+
+.card:hover{
+transform:translateY(-12px);
+border-color:gold;
+}
+
+.card h3{
+font-size:28px;
+margin-bottom:20px;
+color:gold;
+}
+
+.gallery{
+padding:100px 10%;
+text-align:center;
+}
+
+.gallery h2{
+font-size:50px;
+margin-bottom:50px;
+color:gold;
+}
+
+.gallery-box{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.gallery-box img{
+width:100%;
+height:300px;
+object-fit:cover;
+border-radius:25px;
+transition:0.4s;
+}
+
+.gallery-box img:hover{
+transform:scale(1.05);
+}
+
+.contact{
+padding:120px 10%;
+text-align:center;
+}
+
+.contact h2{
+font-size:50px;
+margin-bottom:30px;
+color:gold;
+}
+
+footer{
+background:black;
+padding:40px;
+text-align:center;
+margin-top:50px;
+}
+
+@media(max-width:768px){
+
+.content h2{
+font-size:42px;
+}
+
+.content p{
+font-size:18px;
+}
+
+nav{
+padding:20px;
+}
+
+.links{
+gap:15px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+
+<nav>
+
+<h1>DANM</h1>
+
+<div class="links">
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</div>
+
+</nav>
+
+<div class="overlay"></div>
+
+<div class="content">
+
+<h2>Build Your Dream With DANM</h2>
+
+<p>
+Luxury Property • Premium Furniture • Building Materials
+</p>
+
+<div class="buttons">
+
+<a href="https://instagram.com/deep4k001" target="_blank">
+<button class="insta">Instagram</button>
+</a>
+
+<a href="https://wa.me/918699940753" target="_blank">
+<button>WhatsApp</button>
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<section id="about" class="about">
+
+<h2>About Founder</h2>
+
+<p>
+Founded by Deepak Upadhyay from Dhandari Kalan, Ludhiana, India.
+DANM is a premium brand focused on luxury properties,
+modern furniture and building materials.
+</p>
+
+</section>
+
+<section id="services" class="services">
+
+<div class="card">
+<h3>Luxury Properties</h3>
+</div>
+
+<div class="card">
+<h3>Premium Furniture</h3>
+</div>
+
+<div class="card">
+<h3>Building Materials</h3>
+</div>
+
+<div class="card">
+<h3>Interior Design</h3>
+</div>
+
+</section>
+
+<section id="gallery" class="gallery">
+
+<h2>Luxury Collection</h2>
+
+<div class="gallery-box">
+
+<img src="https://images.unsplash.com/photo-1494526585095-c41746248156">
+
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
+
+<img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4">
+
+<img src="https://images.unsplash.com/photo-1560185007-cde436f6a4d0">
+
+</div>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2>Contact DANM</h2>
+
+<p>Instagram: @deep4k001</p>
+
+<p>Ludhiana, India</p>
+
+<a href="https://wa.me/918699940753" target="_blank">
+<button>Chat on WhatsApp</button>
+</a>
+
+</section>
+
+<footer>
+
+<h2>DANM</h2>
+
+<p>© 2026 All Rights Reserved</p>
+
+</footer>
+
+</body>
+</html>
